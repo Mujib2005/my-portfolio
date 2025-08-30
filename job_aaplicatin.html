@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="yes">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title>Job Application Form</title>
+    <style>
+     body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    padding: 20px;
+}
+
+legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #555;
+    padding: 0 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #666;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+input[type="file"] {
+    margin-top: 10px;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+    </style>
+</head>
+<body>
+    <div class="form-container">
+    <h2 class="form-heading">Job Application Form</h2>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email"><br><br>
+            <input type="file" name="resume" id="">
+        </fieldset>
+        <fieldset>
+            <legend>Job Preferences</legend>
+            <label for="role">Select Role:</label><br>
+            <select id="role">
+                <option value="developer">Developer</option>
+                <option value="designer">Designer</option>
+                <option value="tester">Tester</option>
+            </select><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Cover Letter</legend>
+            <label for="message">Why should we hire you?</label><br>
+            <textarea id="message" rows="4" cols="40"></textarea>
+        </fieldset>
+        <br>
+        <button type="submit">Submit Application</button>
+    </form>
+    </div>
+</body>
+</html>

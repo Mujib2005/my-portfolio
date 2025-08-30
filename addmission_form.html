@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+    <style>
+       body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block; /* Ensures each label starts on a new line */
+    font-weight: bold;
+    color: #555;
+    margin-top: 20px; /* Adds space above each label */
+    margin-bottom: 5px; /* Adds space between the label and input field */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+p {
+    font-weight: bold;
+    color: #555;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+/* For radio buttons and checkboxes, we'll apply styles directly */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.3s;
+    width: 100%; /* Makes the button full-width */
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+    </style>
+</head>
+<body>
+    
+    <br>
+    <form>
+        <!--full name-->
+        <label for="fullname">full name:</label><br>
+        <input type="text" id="fullname" placeholder="enter yor full name"><br><br>
+        <!--email id-->
+        <label for="emailid">email id:</label><br>
+        <input type="email" id="emailid" placeholder="enter yor email id"><br><br>
+        <!--mobile number-->
+        <label for="mobilenumber">mobile number:</label><br>
+        <input type="number" id="mobilenumber" placeholder="enter yor mobile number"><br><br>
+        <!--date-->
+        <label for="dob">date of birth:</label><br>
+        <input type="date" id="dob" placeholder="enter yor date of birth"><br><br>
+        <!--number-->
+        <label for="age">age:</label><br>
+        <input type="number" id="age" min="1" max="100"><br><br>
+        <!--gender radio-->
+        <p>gender :</p>
+        <input type="radio" name="gender" value="male">male<br><br>
+        <input type="radio" name="gender" value="male">female<br><br>
+        <input type="radio" name="gender" value="male">other<br><br>
+        <!--document-->
+        <p>uploaded document:</p>
+        <input type="file" name="uploaded document" value="10th mark sheet">10th mark sheet<br><br>
+        <input type="file" name="uploaded document" value="12th mark sheet">12th mark sheet<br><br>
+        <input type="file" name="uploaded document" value="leaving certificat">leaving certificat<br><br>
+        <!--check box-->
+        <p>select uploaded document:</p>
+        <input type="checkbox" name="10th mark sheet" value="10th mark sheet">10th mark sheet<br><br>
+        <input type="checkbox" name="12th mark sheet" value="12th mark sheet">12th mark sheet<br><br>
+        <input type="checkbox" name="leaving certificat" value="leaving certificat">leaving certificat<br><br>
+        <!--password-->
+        <label for="--password--">password:</label><br>
+        <input type="password" id="password" placeholder="enter your password"><br><br>
+        <button type="submit" >register</button>
+    </form>
+    
+</body>
+</html>
